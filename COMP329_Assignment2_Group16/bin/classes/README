@@ -1,0 +1,19 @@
+This is the cleaning-robots folder from the examples provided in the Jason
+distribution, with some additional files:
+
+r1_v1.asl
+r1_v2.asl
+r1_v3.asl
+r1_v4.asl
+
+These are simpler versions of the code provided in r1.asl, as control 
+programs for that garbage collecting robot.
+
+The idea is that when viewed sequentially they provide a series of steps
+towards the development of the full program, suitable for not-so-confident
+agent programmers.
+
+There is no significant new content in these programs, compared with
+what you saw in the lectures, just a few additional comments.
+
+If you want to run these programs, you will have to edit the mars.mas2j file.

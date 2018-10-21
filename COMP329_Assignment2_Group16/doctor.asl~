@@ -1,0 +1,22 @@
+// doctor agant
+
+/* Initial beliefs */
+
+/* Initial goal */
+
+!checkPsbLoc(slot). 
+
+/* Plans */
+
+// find where robot is
++!checkPsbLoc(slot) : not onlyLoc
+   <- trimLoc(slot);
+      !!checkPsbLoc(slot).
++!checkPsbLoc(slot) : onlyLoc
+   <- !!findVictim(slot).
+   
+// find victim if have not found 3 victims 
++!findVictim(slot) : not findVictim(3)
+   <- goToNearestVictim(slot);
+      !!findVictim(slot).
++!findVictim(slot).
